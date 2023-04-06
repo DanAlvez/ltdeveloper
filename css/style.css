@@ -6,9 +6,16 @@
   --terceary-color: hsl(62, 75%, 51%);
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   box-sizing: border-box;
   font-family: 'Open sans', 'Arial';
 }
@@ -18,19 +25,24 @@ body {
 .menu {
   background-color: var(--primary-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
   padding: 1.5rem 0;
-  box-shadow: 0 1rem 0.1rem hsla(0, 0%, 0%, 0.4);
+  box-shadow: 0 0rem 0.5rem hsla(0, 0%, 0%, 0.4);
 }
 
 .menu img {
   width: 15rem;
-  height: 3rem;
+  height: 2.8rem;
   color: white;
   cursor: pointer;
+  margin-left: 3rem;
+}
+
+nav {
+  margin-right: 3rem;
 }
 
 nav ul {
@@ -69,8 +81,8 @@ nav .activate {
 }
 
 .burguer {
-  width: 3.25rem;
-  height: 2rem;
+  width: 2rem;
+  height: 1.5rem;
   position: relative;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -80,7 +92,7 @@ nav .activate {
 .burguer span {
   display: block;
   position: absolute;
-  height: 0.4rem;
+  height: 0.3rem;
   width: 100%;
   background: #fff;
   opacity: 1;
@@ -95,11 +107,11 @@ nav .activate {
 
 .burguer span:nth-child(2),
 .burguer span:nth-child(3) {
-  top: 1rem;
+  top: 0.75rem;
 }
 
 .burguer span:nth-child(4) {
-  top: 2rem;
+  top: 1.45rem;
 }
 
 .burguer.open span:nth-child(1) {
@@ -122,9 +134,12 @@ nav .activate {
   left: 50%;
 }
 
+/* BANNER */
+
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/banner1.jpg'), no-repeat, center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 4rem 0 2rem;
   display: flex;
   flex-direction: column;
@@ -166,4 +181,78 @@ nav .activate {
   background-color: #fff;
   color: var(--primary-color);
   transform: scale(1.05);
+}
+
+/* SERVIÇOS */
+
+section {
+  padding-top: 5rem !important;
+}
+
+#service {
+  background: linear-gradient(110deg, var(--primary-color), var(--secondary-color));
+}
+
+#service h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: var(--terceary-color);
+}
+
+#service h2 {
+  text-align: center;
+  font-family: 'Roboto Slab';
+  color: var(--secondary-color);
+}
+
+#service aside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#service svg {
+  max-width: 15rem;
+  margin: auto;
+}
+
+#service svg:first-child {
+  margin-top: 3rem;
+}
+
+#service h3 {
+  text-align: center;
+  color: var(--terceary-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#service p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'Roboto Slab';
+  padding: 0 2rem;
+  font-weight: 300;
+}
+
+#service aside:last-child {
+  padding-bottom: 3rem;
+}
+
+/* PROJETOS */
+
+#projects {
+  background: linear-gradient(110deg, var(--terceary-color), hsl(59, 88%, 37%));
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#projects h1 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
