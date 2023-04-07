@@ -252,4 +252,39 @@ section {
   color: var(--secondary-color);
   text-transform: uppercase;
   font-size: 1.4rem;
+  margin-top: 0;
+}
+
+/* SOBRE */
+
+#about {
+  background: linear-gradient(110deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+#about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--terceary-color);
+  margin-top: 0;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+#about div:last-child {
+  text-align: justify;
+  font-size: 1.6rem;
+  font-family: 'Roboto Slab';
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
 }
