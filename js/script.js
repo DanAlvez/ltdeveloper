@@ -11,12 +11,3 @@ function closeClick() {
   close.classList.remove('open')
   off.classList.remove('activate')
 }
-
-$(document).ready(function () {
-  $('.slide-container').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
-    arrows: false
-  })
-})

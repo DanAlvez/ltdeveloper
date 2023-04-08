@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,15 +23,13 @@
       rel="stylesheet"
     />
     <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
       href="slick-1.8.1/slick-1.8.1/slick/slick.css"
     />
-    <script
-      type="text/javascript"
-      src="slick-1.8.1/slick-1.8.1/slick/slick.js"
-    ></script>
     <title>LT Developer</title>
   </head>
   <body>
@@ -174,13 +173,7 @@
       <section id="projects">
         <h1>Projetos</h1>
         <div class="carousel">
-          <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
-            src=""
-            alt=""
-          /><img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
-            src=""
-            alt=""
-          /><img src="" alt="" /><img src="" alt="" />
+          <a href=""><img src="" alt=""></a>
         </div>
       </section>
       <section id="about">
@@ -212,31 +205,11 @@
         <div class="slide-container">
           <div class="slide">
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
-              enim non dolor laoreet commodo"
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              non enim non dolor laoreet commodo"
             </p>
             <p class="autor">
-              <span>Nome Sobrenome</span><br>
-              Nome da empresa
-            </p>
-          </div>
-          <div class="slide">
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
-              enim non dolor laoreet commodo"
-            </p>
-            <p class="autor">
-              <span>Nome Sobrenome</span><br>
-              Nome da empresa
-            </p>
-          </div>
-          <div class="slide">
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
-              enim non dolor laoreet commodo"
-            </p>
-            <p class="autor">
-              <span>Nome Sobrenome</span><br>
+              <span>Nome Sobrenome</span><br />
               Nome da empresa
             </p>
           </div>
@@ -246,7 +219,37 @@
         <h1>Dúvidas Frequentes</h1>
       </section>
       <section id="contact">
-        <h1>Contatos</h1>
+        <div>
+          <h1>Contatos</h1>
+          <h2>Fale Conosco</h2>
+          <p>Rua Botuverá 261 Apto.: 102<br>
+            Dom Joaquim - Brusque/SC</p>
+          <h2>Comercial</h2>
+          <p>+55 (73) 9 9941-2514</p>
+        </div>
+        <form action="https://ltdeveloper.com.br/mail" method="post">
+          <label for="name">
+            Nome<br>
+            <input type="text" name="nome" id="name" autocomplete="on" required>
+          </label>
+          <label for="email">
+            Email<br>
+            <input type="email" name="email" id="email" autocomplete="on" required>
+          </label>
+          <label for="subject">
+            Assunto<br>
+            <input type="text" name="assunto" id="subject" maxlength="30" autocomplete="off" required>
+          </label>
+          <label for="phone">
+            Contato<br>
+            <input type="number" name="contato" id="phone" autocomplete="off" required>
+          </label>
+          <label for="mensage">
+            Mensagem<br>
+            <textarea name="mensagem" id="mensage" cols="22" rows="3"></textarea>
+          </label>
+          <button class="btn btn-contact">ENVIAR</button>
+        </form>
       </section>
     </main>
     <footer>
