@@ -134,7 +134,8 @@ nav .activate {
 /* BANNER */
 
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/banner1.jpg'), no-repeat, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/banner1.jpg'), no-repeat, center;
   background-size: cover;
   background-attachment: fixed;
   padding: 4rem 0 2rem;
@@ -144,11 +145,19 @@ nav .activate {
   align-items: center;
 }
 
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
 .banner h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   margin-bottom: 0;
+  margin-top: 3rem;
 }
 
 .banner p {
@@ -164,7 +173,7 @@ nav .activate {
   color: #fff;
   margin: auto;
   padding: 1rem 3rem;
-  border: 0.2rem solid #FFF;
+  border: 0.2rem solid #fff;
   border-radius: 2rem;
   font-size: 1.8rem;
   font-weight: 600;
@@ -187,7 +196,11 @@ section {
 }
 
 #service {
-  background: linear-gradient(110deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    110deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
 
 #service h1 {
@@ -258,7 +271,11 @@ section {
 /* SOBRE */
 
 #about {
-  background: linear-gradient(110deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    110deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -288,3 +305,45 @@ section {
   border-radius: 0.5rem;
   margin: 2rem 0;
 }
+
+/* DEPOIMENTOS */
+
+#depositions {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+}
+
+.slide-container {
+  padding: 0 2rem 4rem;
+}
+
+#depositions p:first-child {
+  font-family: 'Roboto Slab';
+  font-size: 2rem;
+}
+
+#depositions .slide span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--terceary-color);
+}
+
+#depositions .slide p:last-child {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+/* FAQ */
+
+#faq {
+  background: linear-gradient(
+    110deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  text-align: center;
+  color: var(--terceary-color);
+}
+
+/* CONTATOS */
