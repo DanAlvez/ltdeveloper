@@ -64,15 +64,15 @@ nav ul li a:hover {
 }
 
 nav .activate {
-  top: 6rem;
+  top: 0;
   left: 0;
   position: absolute;
   background-color: hsla(271, 84%, 32%, 0.8);
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   z-index: 1;
 }
@@ -376,7 +376,8 @@ form {
   padding: 0 3rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   border: none;
   outline: none;
   border-bottom: solid 0.1rem;
@@ -402,5 +403,78 @@ label {
 .btn:hover {
   border-color: var(--secondary-color);
   color: var(--secondary-color);
-  transform: scale(1.05)
+  transform: scale(1.05);
+}
+
+/* RODAPÉ */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+}
+
+footer aside {
+  margin: 5rem 0 2.5rem;
+}
+
+footer aside:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+
+footer aside:first-child div {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 100%;
+}
+
+footer img {
+  max-width: 15rem;
+}
+
+footer svg {
+  max-width: 4rem;
+}
+
+hr {
+  width: 1rem;
+  color: black;
+  width: 75%;
+}
+
+.copyright p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-weight: 500;
+}
+
+footer aside:last-child {
+  width: 90%;
+  margin: 2.5rem 0;
+}
+
+footer ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  width: 90%;
+}
+
+footer ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+footer ul li {
+  margin-bottom: 1rem;
 }
