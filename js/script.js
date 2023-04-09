@@ -1,8 +1,34 @@
+$(function () {
+  $('#projects .carousel').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 2000
+  })
+
+  $('#depositions .slide-container').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 2000
+  })
+
+  $('.burguer').on('click', openClick)
+})
+
 function openClick() {
-  var open = document.querySelector('.burguer')
-  var activate = document.querySelector('#menu')
-  open.classList.add('open')
-  activate.classList.add('activate')
+  if (!$('.burguer').hasClass('open')) {
+    $('.burguer').addClass('open')
+    $('#menu').addClass('activate')
+  } else {
+    $('.burguer').removeClass('open')
+    $('#menu').removeClass('activate')
+  }
 }
 
 function closeClick() {

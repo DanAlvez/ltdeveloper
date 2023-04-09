@@ -28,6 +28,7 @@ body {
   width: 100%;
   padding: 1.5rem 0;
   box-shadow: 0 0rem 0.5rem hsla(0, 0%, 0%, 0.4);
+  z-index: 1;
 }
 
 .menu img {
@@ -258,6 +259,7 @@ section {
 #projects {
   background: linear-gradient(110deg, var(--terceary-color), hsl(59, 88%, 37%));
   padding-top: 1rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
 
@@ -267,6 +269,24 @@ section {
 
 #projects a img {
   max-width: 100%;
+}
+
+#projects .carousel {
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+#projects .carousel .slick-slide {
+  padding: 10px;
+}
+
+#projects .carousel .slick-slide a {
+  transition: all ease 0.5s;
+}
+
+#projects .carousel .slick-slide.slick-center a {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* SOBRE */
@@ -314,6 +334,7 @@ section {
   color: white;
   text-align: center;
   height: fit-content;
+  overflow-x: hidden;
 }
 
 .slide-container {
@@ -440,13 +461,17 @@ footer img {
 }
 
 footer svg {
-  max-width: 4rem;
+  max-width: 3rem;
 }
 
 hr {
   width: 1rem;
   color: black;
   width: 75%;
+}
+
+.copyright {
+  margin: 2.5rem 0;
 }
 
 .copyright p {
