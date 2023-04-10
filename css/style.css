@@ -320,11 +320,70 @@ section {
   text-align: justify;
   font-size: 1.6rem;
   font-family: 'Roboto Slab';
+  font-weight: 300;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
   margin: 2rem 0;
+}
+
+/* FAQ */
+
+#faq {
+  background: linear-gradient(
+    110deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  text-align: center;
+  color: var(--terceary-color);
+}
+
+#faq h1 {
+  margin-bottom: 3rem;
+}
+
+.faq {
+  padding: 0 2rem 1rem;
+}
+
+.question {
+  margin-bottom: 2.5rem;
+}
+
+.question h2 {
+  background: var(--secondary-color);
+  color: white;
+  text-align: initial;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.question h2::after {
+  content: '+';
+  float: right;
+}
+
+.question .open-2::after {
+  content: '-';
+}
+
+.question p {
+  display: none;
+  color: white;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: justify;
+  font-family: 'Roboto Slab';
+  font-weight: 300;
+}
+
+.question .activate-2 {
+  display: block;
 }
 
 /* DEPOIMENTOS */
@@ -355,18 +414,6 @@ section {
 #depositions .slide p:last-child {
   font-size: 1.4rem;
   color: var(--primary-color);
-}
-
-/* FAQ */
-
-#faq {
-  background: linear-gradient(
-    110deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  text-align: center;
-  color: var(--terceary-color);
 }
 
 /* CONTATOS */

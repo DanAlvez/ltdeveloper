@@ -19,6 +19,8 @@ $(function () {
   })
 
   $('.burguer').on('click', openClick)
+
+  $('.faq .question').on('click', dropdownFaq)
 })
 
 function openClick() {
@@ -36,4 +38,16 @@ function closeClick() {
   var off = document.querySelector('#menu')
   close.classList.remove('open')
   off.classList.remove('activate')
+}
+
+function dropdownFaq() {
+  var open2 = $(this).find('h2')
+  var activate2 = $(this).find('p')
+  if (!open2.hasClass('open-2')) {
+    open2.addClass('open-2')
+    activate2.addClass('activate-2')
+  } else {
+    open2.removeClass('open-2')
+    activate2.removeClass('activate-2')
+  }
 }
