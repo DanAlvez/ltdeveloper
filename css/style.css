@@ -351,6 +351,7 @@ section {
 
 .question {
   margin-bottom: 2.5rem;
+  cursor: pointer;
 }
 
 .question h2 {
@@ -360,7 +361,7 @@ section {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .question h2::after {
@@ -420,6 +421,7 @@ section {
 
 #contact h1 {
   font-weight: 700;
+  color: var(--primary-color);
 }
 
 #contact h2 {
@@ -534,10 +536,12 @@ footer aside:last-child {
 }
 
 footer ul {
-  display: block;
   list-style-type: none;
   padding: 0;
   width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 footer ul li a {
@@ -567,6 +571,9 @@ footer ul li {
   .banner {
     align-items: flex-start;
     padding-left: 3rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/banner.jpg');
+    background-size: cover;
   }
   .banner h1 {
     font-size: 6rem !important;
@@ -626,7 +633,7 @@ footer ul li {
   }
   /* FAQ */
   .question h2 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
   }
   .question p {
     font-size: 1.8rem;
@@ -648,5 +655,64 @@ footer ul li {
   }
   .social div svg {
     margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* CABEÇALHO */
+  nav ul li a {
+    font-size: 1.6rem;
+  }
+  .banner {
+    padding: 0 10rem;
+  }
+  .banner h1 {
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+  }
+  .banner .btn {
+    margin-bottom: 13rem;
+    margin-top: 2.5rem;
+  }
+  /* SERVIÇOS */
+  #service aside {
+    justify-content: space-evenly;
+  }
+  /* SOBRE */
+  #about {
+    padding: 0 5rem !important;
+  }
+  /* DEPOIMENTOS */
+  #depositions .slide-container {
+    padding: 0 20rem 4rem;
+  }
+  /* FAQ */
+  .question {
+    margin-bottom: 0rem;
+  }
+  .faq {
+    padding: 1rem 10rem;
+  }
+  /* CONTATOS */
+  #contact {
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+  #contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+  }
+  #contact form {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+  }
+  #contact p {
+    padding: 0;
   }
 }

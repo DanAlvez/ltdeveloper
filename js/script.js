@@ -1,12 +1,18 @@
 $(function () {
   $('#projects .carousel').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 4,
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 2000,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2
+        }
+      },
       {
         breakpoint: 768,
         settings: {
