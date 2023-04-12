@@ -44,12 +44,11 @@ nav {
 }
 
 nav ul {
-  display: flex;
+  display: none;
   list-style-type: none;
   justify-content: center;
   margin: 0;
   padding: 0;
-  display: none;
 }
 
 nav ul li a {
@@ -151,10 +150,15 @@ h1 {
   text-align: center;
   font-size: 1.4rem;
   margin-top: 0;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
 }
 
 .banner h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   color: white;
   margin-bottom: 0;
@@ -172,7 +176,6 @@ h1 {
 .btn {
   text-decoration: none;
   color: #fff;
-  margin: auto;
   padding: 1rem 3rem;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
@@ -205,10 +208,6 @@ section {
 }
 
 #service h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  margin-top: 0;
   color: var(--terceary-color);
 }
 
@@ -308,11 +307,13 @@ section {
   font-size: 1.4rem;
   color: var(--terceary-color);
   margin-top: 0;
+  border-bottom: 0.1rem solid var(--terceary-color);
+  max-width: max-content;
+  margin: auto;
 }
 
 #about h2 {
   text-align: center;
-  font-size: 1.8rem;
   color: var(--secondary-color);
 }
 
@@ -376,7 +377,7 @@ section {
   color: white;
   font-size: 1.4rem;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   text-align: justify;
   font-family: 'Roboto Slab';
   font-weight: 300;
@@ -407,12 +408,11 @@ section {
 
 #depositions .slide span {
   font-weight: 700;
-  font-size: 1.6rem;
   color: var(--terceary-color);
 }
 
 #depositions .slide p:last-child {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--primary-color);
 }
 
@@ -549,4 +549,104 @@ footer ul li a {
 
 footer ul li {
   margin-bottom: 1rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (min-width: 768px) {
+  /* CABEÇALHO */
+  .burguer {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    font-size: 1.4rem;
+  }
+  .banner {
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+  .banner h1 {
+    font-size: 6rem !important;
+  }
+  .banner p {
+    padding: 0;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .banner .btn {
+    margin-bottom: 5rem;
+  }
+  /* SERVIÇOS */
+  h1 {
+    font-size: 1.6rem !important;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+  #service aside {
+    display: flex;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #service aside div {
+    max-width: 25rem;
+  }
+  /* PROJETOS */
+  #projects .slick-slide.slick-center a {
+    transform: scale(1) !important;
+  }
+  /* SOBRE */
+  #about {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0 !important;
+  }
+  #about h2 {
+    margin-top: 5rem;
+  }
+  #about div:first-child {
+    padding: 0 2rem;
+  }
+  #about div:last-child {
+    max-width: 50%;
+    margin: 3rem 1rem;
+  }
+  #about div:last-child p {
+    font-size: 1.8rem;
+  }
+  /* DEPOSITIONS */
+  #depositions p:first-child {
+    font-size: 4rem;
+  }
+  /* FAQ */
+  .question h2 {
+    font-size: 1.6rem !important;
+  }
+  .question p {
+    font-size: 1.8rem;
+  }
+  /* RODAPÉ */
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer aside {
+    max-width: max-content;
+    margin: 0;
+  }
+  footer .social {
+    min-width: 0% !important;
+  }
+  hr {
+    display: none;
+  }
+  .social div svg {
+    margin-right: 0.5rem;
+  }
 }

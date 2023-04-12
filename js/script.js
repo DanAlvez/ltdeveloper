@@ -1,12 +1,20 @@
 $(function () {
   $('#projects .carousel').slick({
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
     centerMode: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    speed: 2000
+    speed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   })
 
   $('#depositions .slide-container').slick({
